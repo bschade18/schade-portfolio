@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101828" />
+    <title>
+      Production Mobile Platform - Bobby Schade
+    </title>
+    <meta
+      name="description"
+      content="Project writeup: shipping end-to-end features for a production React Native app with backend APIs, AI integrations, and release-safe delivery."
+    />
+    <link
+      rel="canonical"
+      href="https://bobbyschade.com/work/production-mobile-platform.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Production Mobile Platform - Bobby Schade"
+    />
+    <meta
+      property="og:description"
+      content="A production project writeup covering React Native, PHP APIs, AI integrations, and safer rollout patterns."
+    />
+    <meta
+      property="og:url"
+      content="https://bobbyschade.com/work/production-mobile-platform.html"
+    />
+    <meta
+      property="og:image"
+      content="https://bobbyschade.com/images/bend.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&amp;family=Manrope:wght@400;500;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="../index.html" aria-label="Bobby Schade home">
+          <span class="site-brand__name">Bobby Schade</span>
+          <span class="site-brand__role">Senior Full-Stack Developer</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary" data-site-nav>
+          <button
+            class="site-nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-menu-toggle
+          >
+            Open menu
+          </button>
+          <ul class="site-nav__menu" id="primary-navigation">
+            <li><a href="../index.html#work">Work</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li>
+              <a href="../resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            </li>
+          </ul>
+          <a class="button button-primary site-nav__cta" href="../index.html#contact">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <div class="container">
+        <section class="page-shell__hero surface-card">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <a href="../index.html#work">Work</a>
+            <span>/</span>
+            <strong aria-current="page">Production Mobile Platform</strong>
+          </nav>
+          <p class="section-tag">Project deep dive</p>
+          <h1 class="page-title">
+            Production Mobile Platform - shipping end-to-end features at scale
+          </h1>
+          <p class="page-summary">
+            I contributed to a production React Native app that powers
+            interactive experiences for real customers. My work spanned mobile
+            UI, backend APIs, data contracts, and AI-assisted features,
+            delivered under live-release constraints.
+          </p>
+
+          <div class="meta-grid">
+            <div>
+              <span class="meta-label">Role</span>
+              Senior full-stack contributor, mobile + backend
+            </div>
+            <div>
+              <span class="meta-label">Scope</span>
+              React Native app, PHP APIs, data, integrations
+            </div>
+            <div>
+              <span class="meta-label">Team</span>
+              Cross-functional product and engineering team
+            </div>
+            <div>
+              <span class="meta-label">Timeline</span>
+              Production work across recent live releases
+            </div>
+            <div>
+              <span class="meta-label">Stack</span>
+              React Native, Expo, TypeScript, PHP, MySQL, Firebase, Stripe, AI
+              APIs
+            </div>
+            <div>
+              <span class="meta-label">Product</span>
+              Former employer app; public store details omitted here
+            </div>
+          </div>
+        </section>
+
+        <div class="case-study-layout">
+          <div class="page-grid">
+            <section class="case-study-section surface-card">
+              <h2>Context</h2>
+              <p>
+                The product combines content, gameplay, and location-aware
+                flows. Shipping safely matters because the app is live and
+                customer-facing every day, so speed only counts if the release
+                is still stable, debuggable, and supportable.
+              </p>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>Problem</h2>
+              <ul>
+                <li>
+                  New experiences needed to ship quickly while keeping quality
+                  high.
+                </li>
+                <li>
+                  Complex flows required clean boundaries between UI state,
+                  network state, and persisted data.
+                </li>
+                <li>
+                  Support and operational load needed to drop without hurting
+                  the customer experience.
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>What I delivered</h2>
+              <ul>
+                <li>
+                  Built end-to-end features across mobile UI and backend
+                  endpoints instead of stopping at one layer.
+                </li>
+                <li>
+                  Designed data models and API contracts that made complex
+                  experiences more consistent and easier to debug.
+                </li>
+                <li>
+                  Implemented AI-assisted functionality to support content and
+                  operational workflows with clearer guardrails.
+                </li>
+                <li>
+                  Added release hygiene around risky flows with better logging,
+                  rollout discipline, and safer fallback paths.
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>Technical approach</h2>
+              <div class="page-grid">
+                <div>
+                  <h3>Architecture</h3>
+                  <p>
+                    I separated feature modules, shared UI primitives, and
+                    network and data layers to reduce accidental coupling and
+                    keep the app easier to reason about as flows expanded.
+                  </p>
+                </div>
+                <div>
+                  <h3>Backend</h3>
+                  <p>
+                    On the PHP side, I extended endpoints with predictable
+                    response shapes, validation, and schema changes that were
+                    easier to migrate and safer to support after release.
+                  </p>
+                </div>
+                <div>
+                  <h3>Reliability</h3>
+                  <p>
+                    High-risk paths used idempotent patterns, explicit
+                    validation, and rollback-aware release steps so retries and
+                    partial failures were less painful.
+                  </p>
+                </div>
+                <div>
+                  <h3>Performance + rollout</h3>
+                  <p>
+                    I reduced over-fetching where repeated calls mattered and
+                    leaned on staged rollout patterns when a feature touched
+                    expensive or fragile paths.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>Results</h2>
+              <p>
+                Specific figures are generalized to respect confidentiality, but
+                these were the main signals we tracked as features moved from
+                build to live release.
+              </p>
+              <div class="results-table-wrap">
+                <table class="results-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Focus area</th>
+                      <th scope="col">What we watched</th>
+                      <th scope="col">Source</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Feature adoption</td>
+                      <td>
+                        In-app usage across new experience flows after release
+                      </td>
+                      <td>Product analytics</td>
+                    </tr>
+                    <tr>
+                      <td>Support load</td>
+                      <td>
+                        Changes in manual handling after UX and AI-assisted
+                        improvements
+                      </td>
+                      <td>Support reporting and internal feedback</td>
+                    </tr>
+                    <tr>
+                      <td>Completion flow</td>
+                      <td>
+                        Drop-off points on high-value steps and how quickly they
+                        could be debugged
+                      </td>
+                      <td>Funnel events and release notes</td>
+                    </tr>
+                    <tr>
+                      <td>Release stability</td>
+                      <td>
+                        Crash-free behavior and rollout confidence build over
+                        build
+                      </td>
+                      <td>Crash reporting and release dashboards</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="micro-copy" style="margin-top: 1rem">
+                The throughline was safer iteration. Shipping got easier when
+                contracts were clearer, debugging was faster, and the app had
+                fewer mystery states in production.
+              </p>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>What I learned and what I would do next</h2>
+              <ul>
+                <li>
+                  Small API contract improvements compound into major UX
+                  stability over time.
+                </li>
+                <li>
+                  AI features need guardrails, evaluation, and a rollback plan,
+                  not just a clever prompt.
+                </li>
+                <li>
+                  The best mobile work usually happens where product clarity,
+                  instrumentation, and release discipline meet.
+                </li>
+                <li>
+                  Next step: deepen instrumentation around the highest-value
+                  steps so drop-off and support impact are easier to quantify
+                  earlier.
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <aside class="page-grid">
+            <div class="case-study-section surface-card">
+              <h2>NDA note</h2>
+              <p>
+                Some details are generalized to respect confidentiality. I am
+                happy to walk through architecture, tradeoffs, and release
+                decisions in an interview.
+              </p>
+            </div>
+
+            <div class="cta-band">
+              <h2 class="hero-highlight__title">Want to talk?</h2>
+              <p>
+                If this looks like the kind of ownership you need, the fastest
+                next step is a message through the site or LinkedIn.
+              </p>
+              <div class="button-row" style="margin-top: 1rem">
+                <a class="button button-primary" href="../index.html#contact">
+                  Contact
+                </a>
+                <a
+                  class="button button-secondary"
+                  href="../resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>Built with care for speed, accessibility, and clarity.</p>
+        <div class="site-footer__links">
+          <span>&copy; 2026 Bobby Schade.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

@@ -1,388 +1,524 @@
-<DOCTYPE! html>
-  <html>
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="format-detection" content="telephone=no" />
-      <title>Bobby Schade | JavaScript Developer</title>
-
-      <meta
-        name="description"
-        content="Welcome to the portfolio page for JavaScript developer Bobby Schade."
-      />
-      <meta
-        name="keywords"
-        content="bobby, schade, bobbyschade, developer, javascript, programmer"
-      />
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-        rel="stylesheet"
-      />
-
-      <link
-        href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap"
-        rel="stylesheet"
-      />
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-      />
-      <link rel="stylesheet" type="text/css" href="css/main.css" />
-    </head>
-
-    <body id="home">
-      <nav id="navbar">
-        <div class="container">
-          <div class="social-icons">
-            <a
-              class="icon-link"
-              href="https://github.com/bschade18"
-              target="_blank"
-            >
-              <i class="fab fa-github icon-lg"></i>
-            </a>
-
-            <a
-              class="icon-link"
-              href="https://www.linkedin.com/in/bobby-schade"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin-in icon-lg pl-1"></i>
-            </a>
-            <a
-              class="icon-link"
-              href="https://twitter.com/SchadeyHacker"
-              target="_blank"
-            >
-              <i class="fab fa-twitter icon-lg pl-1"></i>
-            </a>
-
-            <a
-              class="icon-link"
-              href="https://youtube.com/user/18bschade"
-              target="_blank"
-            >
-              <i class="fab fa-youtube icon-lg pl-1"></i>
-            </a>
-          </div>
-          <ul>
-            <li><a href="#about">About</a></li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#101828" />
+    <title>
+      Bobby Schade - Senior Full-Stack Developer (React Native, React, PHP)
+    </title>
+    <meta
+      name="description"
+      content="Senior full-stack developer shipping production mobile and web apps with React, React Native, PHP, MySQL, Firebase, Stripe, and pragmatic AI integrations."
+    />
+    <link rel="canonical" href="https://bobbyschade.com/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Bobby Schade - Senior Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Production mobile + web case studies with React Native, PHP, Firebase, Stripe, and pragmatic AI features."
+    />
+    <meta property="og:url" content="https://bobbyschade.com/" />
+    <meta
+      property="og:image"
+      content="https://bobbyschade.com/images/bend.png"
+    />
+    <meta property="og:image:alt" content="Portrait of Bobby Schade" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Bobby Schade - Senior Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Production mobile + web case studies with React Native, PHP, Firebase, Stripe, and pragmatic AI features."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bobbyschade.com/images/bend.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&amp;family=Manrope:wght@400;500;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bobby Schade",
+        "jobTitle": "Senior Full-Stack Developer",
+        "url": "https://bobbyschade.com/",
+        "sameAs": [
+          "https://www.linkedin.com/in/bobby-schade",
+          "https://github.com/bschade18"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="index.html" aria-label="Bobby Schade home">
+          <span class="site-brand__name">Bobby Schade</span>
+          <span class="site-brand__role">Senior Full-Stack Developer</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary" data-site-nav>
+          <button
+            class="site-nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-menu-toggle
+          >
+            Open menu
+          </button>
+          <ul class="site-nav__menu" id="primary-navigation">
             <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="now.html">Now</a></li>
+            <li><a href="#about">About</a></li>
             <li>
-              <a class="phone" href="tel:+14404650367">440.465.0367</a>
+              <a href="resume.pdf" target="_blank" rel="noreferrer">Resume</a>
             </li>
           </ul>
-          <a class="phone-mobile" href="tel:+144046550367">440.465.0367</a>
-        </div>
-      </nav>
+          <a class="button button-primary site-nav__cta" href="#contact">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
 
-      <section id="about">
+    <main id="main">
+      <section class="hero section section--tight">
         <div class="container">
-          <h3 class="text-primary lg-heading">Hello, I'm Bobby Schade</h3>
-          <div class="about-content">
-            <div class="about-image">
-              <img id="profile-picture" src="./images/bend.png" />
+          <div class="hero__panel">
+            <div class="hero__content">
+              <p class="section-tag">Full-stack and mobile engineering</p>
+              <h1 class="hero__title">
+                Senior Full-Stack Developer for mobile + web.
+              </h1>
+              <p class="hero__lede">
+                I build end-to-end features with React, React Native, PHP, and
+                pragmatic AI integrations, with a focus on reliability,
+                performance, and useful products.
+              </p>
+              <div class="proof-chips" aria-label="Primary strengths">
+                <span class="proof-chip">Production React Native + Expo</span>
+                <span class="proof-chip">PHP + MySQL APIs</span>
+                <span class="proof-chip"
+                  >Firebase auth, app data, deep links</span
+                >
+                <span class="proof-chip">Stripe payments + webhooks</span>
+                <span class="proof-chip">AI-powered product features</span>
+                <span class="proof-chip"
+                  >Testing, debugging, safe releases</span
+                >
+              </div>
+              <div class="button-row">
+                <a class="button button-primary" href="#work">
+                  View featured work
+                </a>
+                <a
+                  class="button button-secondary"
+                  href="resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View resume
+                </a>
+              </div>
+              <p class="hero__availability">
+                Open to senior full-stack and mobile roles, remote or hybrid.
+                Based in Northeast Ohio.
+              </p>
             </div>
-            <div class="about-text">
-              <p>
-                I love building useful tools; I am most experienced with
-                JavaScript and the MERN stack but am constantly learning new
-                technologies.
-              </p>
-              <p>
-                My work can be seen below as well as on my GitHub. Along with
-                coding, I enjoy cooking, good music, television, and movies. I
-                also love being active, particularly by playing tennis,
-                basketball, golf, and ping-pong.
-              </p>
-              <p>
-                Skills & Tech: HTML, CSS, JavaScript, PHP, CodeIgniter,
-                TypeScript, React, Redux, Node, MongoDB, Mongoose, MySQL,
-                Firebase, Bootstrap, Sass, Git
-              </p>
-            </div>
+
+            <aside class="hero__aside" aria-label="Quick summary">
+              <div class="surface-card hero-highlight">
+                <p class="eyebrow">A few things I care about</p>
+                <h2 class="hero-highlight__title">
+                  Software should feel simple on the surface and solid
+                  underneath.
+                </h2>
+                <p class="micro-copy">
+                  I like shipping useful products, tightening the details that
+                  make them reliable, and working within real-world constraints.
+                </p>
+              </div>
+              <div class="hero-highlight__grid">
+                <div class="metric-card">
+                  <strong>Mobile + backend</strong>
+                  <span class="micro-copy">
+                    Comfortable across UI, APIs, data flows, and rollout
+                    details.
+                  </span>
+                </div>
+                <div class="metric-card">
+                  <strong>Product-minded</strong>
+                  <span class="micro-copy">
+                    I like owning the problem, not just the ticket.
+                  </span>
+                </div>
+                <div class="metric-card">
+                  <strong>Release-safe</strong>
+                  <span class="micro-copy">
+                    Safe releases, good debugging, and boring reliability.
+                  </span>
+                </div>
+                <div class="metric-card">
+                  <strong>Modern stack</strong>
+                  <span class="micro-copy">
+                    React Native, React, PHP, MySQL, Firebase, Stripe, and AI
+                    integrations.
+                  </span>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
 
-      <section id="work" class="py-2">
-        <h2 class="lg-heading">Work</h2>
-        <div class="projects container">
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">MovieCity</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/moviecity"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-              <a
-                class="code-link"
-                href="https://www.youtube.com/watch?v=XxkKntq4DWE"
-                target="_blank"
-              >
-                <i class="fab fa-youtube icon"></i>
-              </a>
-            </div>
+      <section class="section" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <p class="section-tag">Featured work</p>
+          <h2 class="section-title" id="work-title">Featured work</h2>
+          <p class="section-intro">
+            A few projects that reflect the kind of work I like doing most:
+            useful tools, real-world constraints, and ideas I wish already
+            existed.
+          </p>
 
-            <a
-              class="portfolio-link"
-              href="https://rocky-shore-27082.herokuapp.com/"
-              target="_blank"
-            >
-              <img class="project-image" src="./images/mc.jpg" alt="project" />
-            </a>
+          <div class="featured-grid">
+            <article class="project-card surface-card">
+              <div class="project-card__header">
+                <div>
+                  <p class="eyebrow">Project details</p>
+                  <h3 class="project-card__title">
+                    Mobile Platform - live production experiences
+                  </h3>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                Built and shipped end-to-end features for a production React
+                Native app, including AI-assisted experiences, backend APIs, and
+                safer rollout patterns.
+              </p>
+              <p class="project-card__meta">
+                <span>Senior full-stack contributor</span>
+                <span>Mobile + backend</span>
+              </p>
+              <p class="project-card__stack">
+                React Native, Expo, TypeScript, PHP, MySQL, Firebase, Stripe, AI
+                APIs
+              </p>
+              <ul class="subtle-list">
+                <li>
+                  Shipped new gameplay and content flows under real release
+                  timelines and product constraints.
+                </li>
+                <li>
+                  Built backend endpoints and data models to support scalable,
+                  repeatable experiences.
+                </li>
+                <li>
+                  Added AI-assisted features and release guardrails that made
+                  iteration safer and easier to support.
+                </li>
+              </ul>
+              <a
+                class="project-card__cta"
+                href="work/production-mobile-platform.html"
+              >
+                View project details
+              </a>
+            </article>
+
+            <article class="project-card surface-card">
+              <div class="project-card__header">
+                <div>
+                  <p class="eyebrow">Project details</p>
+                  <h3 class="project-card__title">
+                    Schade Brothers - business website + lead flow
+                  </h3>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                Built from scratch for my brother and me: a website for our
+                commercial insulation company with a clear path to quote
+                requests.
+              </p>
+              <p class="project-card__meta">
+                <span>End-to-end builder</span>
+                <span>Own business, strategy, UX, build, deploy</span>
+              </p>
+              <p class="project-card__stack">
+                Content strategy, custom front-end build, SEO fundamentals,
+                performance-first UI
+              </p>
+              <ul class="subtle-list">
+                <li>
+                  Built clear service pages and a prominent quote path to reduce
+                  friction.
+                </li>
+                <li>
+                  Kept the layout mobile-first with scannable value props and
+                  visible trust cues.
+                </li>
+                <li>
+                  Structured the site for clean call-to-action tracking,
+                  search-friendly metadata, and low maintenance.
+                </li>
+              </ul>
+              <a class="project-card__cta" href="work/schade-brothers.html">
+                View project details
+              </a>
+            </article>
+
+            <article class="project-card surface-card">
+              <div class="project-card__header">
+                <div>
+                  <p class="eyebrow">In progress</p>
+                  <h3 class="project-card__title">
+                    Public Tennis Court Finder
+                  </h3>
+                </div>
+              </div>
+              <p class="project-card__summary">
+                A location-based mobile app for quickly finding nearby public
+                outdoor tennis courts without the noise of private clubs or
+                restricted facilities.
+              </p>
+              <p class="project-card__meta">
+                <span>Solo builder</span>
+                <span>Product, mobile, data</span>
+              </p>
+              <p class="project-card__stack">
+                Product design, location data, lightweight verification,
+                mobile-first UX
+              </p>
+              <ul class="subtle-list">
+                <li>
+                  Started from a simple question: what do I wish existed that
+                  would actually be useful?
+                </li>
+                <li>
+                  Focused on public outdoor courts, fast directions, and the
+                  details that matter in the moment.
+                </li>
+                <li>
+                  Designed to improve over time with lightweight community
+                  verification and updates.
+                </li>
+              </ul>
+              <a class="project-card__cta" href="work/public-tennis-court-finder.html">
+                View project details
+              </a>
+            </article>
           </div>
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">Issue Tracker</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/bug-tracker"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-              <a
-                class="code-link"
-                href="https://www.youtube.com/watch?v=Lu-oZuTON64"
-                target="_blank"
-              >
-                <i class="fab fa-youtube icon"></i>
-              </a>
-            </div>
-            <a
-              class="portfolio-link"
-              href="https://vast-oasis-03427.herokuapp.com/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/issuetracker.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">E-commerce</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/ecommerce"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-            </div>
-
-            <a
-              id="simon-link"
-              class="portfolio-link"
-              href="http://eshopapp89.herokuapp.com/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/ecomm.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">Recipe Collection</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/recipe-collection"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-            </div>
-
-            <a
-              id="recipe-link"
-              class="portfolio-link"
-              href="https://bschade18.github.io/recipe-collection/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/recipe.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-        </div>
-
-        <div class="show-more projects container">
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">Simon Game</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/simon-game"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-            </div>
-            <a
-              id="issue-tracker-link"
-              class="portfolio-link"
-              href="https://bschade18.github.io/simon-game/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/simon.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">Calculator</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/react-gh-calc"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-            </div>
-
-            <a
-              class="portfolio-link"
-              href="https://bschade18.github.io/react-gh-calc/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/calc.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">Wikipedia Viewer</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/wiki-viewer-v2.0"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-            </div>
-
-            <a
-              class="portfolio-link"
-              href="https://bschade18.github.io/wiki-viewer-v2.0/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/wiki.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-
-          <div class="project card">
-            <div class="project-heading">
-              <p class="project-title">Pomodoro Clock</p>
-              <a
-                class="code-link"
-                href="https://github.com/bschade18/pomo-clock-v2"
-                target="_blank"
-              >
-                <i class="fab fa-github icon"></i>
-              </a>
-            </div>
-
-            <a
-              class="portfolio-link"
-              href="https://bschade18.github.io/pomo-clock-v2/"
-              target="_blank"
-            >
-              <img
-                class="project-image"
-                src="./images/pomodoro.jpg"
-                alt="project"
-              />
-            </a>
-          </div>
-        </div>
-        <button class="show-btn btn">Show Smaller Apps</button>
-      </section>
-
-      <section id="contact">
-        <div class="contact-form container">
-          <form name="contact" method="POST" data-netlify="true">
-            <h2 class="lg-heading">Contact</h2>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Enter Name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter Email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="text"
-                name="phone"
-                id="phone"
-                placeholder="Enter Phone Number"
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea
-                placeholder="Enter Message"
-                name="message"
-                id="message"
-                rows="5"
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <input
-                type="submit"
-                value="Send"
-                class="submit-btn btn btn-dark"
-              />
-            </div>
-          </form>
         </div>
       </section>
 
-      <!-- jQuery CDN -->
-      <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"
-      ></script>
-      <!-- Local JS File -->
-      <script src="js/main.js"></script>
-    </body>
-  </html>
-</DOCTYPE!>
+      <section class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <p class="section-tag">Skills</p>
+          <h2 class="section-title" id="skills-title">Skills</h2>
+          <p class="section-intro">
+            Tools I have used in production and can speak to in depth.
+          </p>
+
+          <div class="skills-grid">
+            <article class="skill-group surface-card">
+              <h3>Frontend</h3>
+              <p>
+                React, TypeScript, state management, form UX, performance tuning
+              </p>
+            </article>
+            <article class="skill-group surface-card">
+              <h3>Mobile</h3>
+              <p>React Native, Expo, push notifications, store releases</p>
+            </article>
+            <article class="skill-group surface-card">
+              <h3>Backend</h3>
+              <p>PHP, REST APIs, MySQL data modeling, caching strategies</p>
+            </article>
+            <article class="skill-group surface-card">
+              <h3>Data + infrastructure</h3>
+              <p>
+                Firebase Auth, Firestore, FCM, background jobs, monitoring
+                basics
+              </p>
+            </article>
+            <article class="skill-group surface-card">
+              <h3>Payments</h3>
+              <p>Stripe Checkout, subscriptions, webhooks, idempotency</p>
+            </article>
+            <article class="skill-group surface-card">
+              <h3>AI integrations</h3>
+              <p>
+                LLM API patterns, prompt guardrails, evaluation mindset, safe
+                fallback states
+              </p>
+            </article>
+            <article class="skill-group surface-card">
+              <h3>Quality</h3>
+              <p>
+                Testing strategy, debugging, release checklists, incident fixes
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <div class="portrait-frame surface-card">
+            <img
+              src="images/bend.png"
+              alt="Portrait of Bobby Schade"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about-copy">
+            <p class="section-tag">About</p>
+            <h2 class="section-title" id="about-title">About</h2>
+            <p>
+              I love building useful tools. My goal is for those tools to feel
+              as simple and intuitive as possible, both for the person using
+              them and for the dev team, or future me, working on them later.
+            </p>
+            <p>
+              That usually pulls me toward full-stack work: the places where
+              frontend, backend, data, and product decisions all meet. I enjoy
+              working through the details that make software easier to use,
+              easier to maintain, and easier to trust.
+            </p>
+            <p>
+              A lot of the time, my starting point is simple: if there is
+              something I wish existed, I will usually try to build it.
+            </p>
+            <p>
+              Along with coding, I enjoy cooking, good music, television, and
+              movies. I also love being active, particularly by playing tennis,
+              basketball, golf, and ping-pong.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-shell">
+            <div class="contact-panel surface-card section--dark">
+              <p class="section-tag">Contact</p>
+              <h2 class="section-title" id="contact-title">Contact</h2>
+              <p class="section-intro">
+                If you are hiring for senior full-stack or mobile work, I would
+                love to hear what you are building. LinkedIn or the form below
+                are the easiest ways to reach me.
+              </p>
+              <div class="button-row" style="margin-top: 1.5rem">
+                <a class="button button-primary" href="#contact-form">
+                  Send a message
+                </a>
+                <a
+                  class="button button-secondary"
+                  href="resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View resume
+                </a>
+              </div>
+              <div class="contact-links">
+                <a
+                  href="https://github.com/bschade18"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/bobby-schade"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-form-card surface-card">
+              <h3 id="contact-form">Send a message</h3>
+              <p class="micro-copy">
+                Messages sent here land in the site inbox, and I usually reply
+                within one to two business days.
+              </p>
+              <form
+                class="contact-form"
+                name="contact-message"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+                action="thanks.html"
+              >
+                <input type="hidden" name="form-name" value="contact-message" />
+                <p class="form-hidden">
+                  <label>
+                    Do not fill this out if you are human:
+                    <input name="bot-field" />
+                  </label>
+                </p>
+                <div class="contact-form__grid">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                  </div>
+                </div>
+                <div class="contact-form__grid">
+                  <div class="form-field">
+                    <label for="company">Company (optional)</label>
+                    <input id="company" name="company" type="text" />
+                  </div>
+                  <div class="form-field">
+                    <label for="role">Role (optional)</label>
+                    <input id="role" name="role" type="text" />
+                  </div>
+                </div>
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <button class="button button-primary" type="submit">
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>Built with care for speed, accessibility, and clarity.</p>
+        <div class="site-footer__links">
+          <span>&copy; 2026 Bobby Schade.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

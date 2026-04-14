@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101828" />
+    <title>Public Tennis Court Finder - Bobby Schade</title>
+    <meta
+      name="description"
+      content="Project deep dive: a location-based mobile app for finding nearby public outdoor tennis courts with lightweight community verification."
+    />
+    <link
+      rel="canonical"
+      href="https://bobbyschade.com/work/public-tennis-court-finder.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Public Tennis Court Finder - Bobby Schade"
+    />
+    <meta
+      property="og:description"
+      content="An in-progress mobile app for finding public outdoor tennis courts quickly and keeping court data more accurate over time."
+    />
+    <meta
+      property="og:url"
+      content="https://bobbyschade.com/work/public-tennis-court-finder.html"
+    />
+    <meta
+      property="og:image"
+      content="https://bobbyschade.com/images/bend.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&amp;family=Manrope:wght@400;500;700;800&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-brand" href="../index.html" aria-label="Bobby Schade home">
+          <span class="site-brand__name">Bobby Schade</span>
+          <span class="site-brand__role">Senior Full-Stack Developer</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary" data-site-nav>
+          <button
+            class="site-nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-menu-toggle
+          >
+            Open menu
+          </button>
+          <ul class="site-nav__menu" id="primary-navigation">
+            <li><a href="../index.html#work">Work</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li>
+              <a href="../resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            </li>
+          </ul>
+          <a class="button button-primary site-nav__cta" href="../index.html#contact">
+            Contact
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page-shell">
+      <div class="container">
+        <section class="page-shell__hero surface-card">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <a href="../index.html#work">Work</a>
+            <span>/</span>
+            <strong aria-current="page">Public Tennis Court Finder</strong>
+          </nav>
+          <p class="section-tag">Project deep dive</p>
+          <h1 class="page-title">
+            Public Tennis Court Finder - a tool I wish already existed
+          </h1>
+          <p class="page-summary">
+            This is an in-progress location-based mobile app for quickly
+            finding nearby public outdoor tennis courts. The goal is to make it
+            easy to find courts without the noise of private clubs or
+            restricted facilities, then keep the data more accurate over time.
+          </p>
+
+          <div class="meta-grid">
+            <div>
+              <span class="meta-label">Status</span>
+              In progress
+            </div>
+            <div>
+              <span class="meta-label">Role</span>
+              Solo builder, product through implementation
+            </div>
+            <div>
+              <span class="meta-label">Scope</span>
+              Mobile app, location data, verification flow
+            </div>
+            <div>
+              <span class="meta-label">Why it exists</span>
+              I wanted a cleaner way to find public outdoor courts quickly
+            </div>
+            <div>
+              <span class="meta-label">Focus</span>
+              Accuracy, speed, and a low-friction mobile experience
+            </div>
+            <div>
+              <span class="meta-label">Links</span>
+              In progress
+            </div>
+          </div>
+        </section>
+
+        <div class="case-study-layout">
+          <div class="page-grid">
+            <section class="case-study-section surface-card">
+              <h2>The idea</h2>
+              <p>
+                A lot of my favorite projects start the same way: I wish
+                something existed, so I start sketching what a better version
+                would look like. This one came from wanting a faster, cleaner
+                way to find public outdoor courts without sorting through
+                private clubs, outdated listings, or unclear access rules.
+              </p>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>What it will do</h2>
+              <ul>
+                <li>Show nearby public outdoor tennis courts quickly.</li>
+                <li>
+                  Highlight useful details like court count, access type, and
+                  directions.
+                </li>
+                <li>
+                  Improve accuracy over time with lightweight user verification,
+                  updates, and additions.
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>What makes it interesting to me</h2>
+              <ul>
+                <li>
+                  It is a simple utility, which is exactly the kind of software
+                  I enjoy most.
+                </li>
+                <li>
+                  It has a clear real-world use case instead of being an app in
+                  search of a problem.
+                </li>
+                <li>
+                  It sits at a nice intersection of mobile UX, location data,
+                  and practical product decisions.
+                </li>
+              </ul>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>Current approach</h2>
+              <div class="page-grid">
+                <div>
+                  <h3>Data quality</h3>
+                  <p>
+                    The challenge is not just finding courts. It is making sure
+                    the results are actually useful, public, and current.
+                  </p>
+                </div>
+                <div>
+                  <h3>Mobile-first flow</h3>
+                  <p>
+                    The app should get someone from search to directions in a
+                    few taps, with as little clutter as possible.
+                  </p>
+                </div>
+                <div>
+                  <h3>Community updates</h3>
+                  <p>
+                    Lightweight verification should help the data improve over
+                    time without turning the experience into a moderation-heavy
+                    mess.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="case-study-section surface-card">
+              <h2>Why I included it here</h2>
+              <p>
+                It is still in progress, but it represents something important
+                about how I think. If there is a tool I wish existed, I am very
+                likely to try building it. That instinct feels just as true to
+                my work as the production projects do.
+              </p>
+            </section>
+          </div>
+
+          <aside class="page-grid">
+            <div class="cta-band">
+              <h2 class="hero-highlight__title">Want to talk?</h2>
+              <p>
+                If your team builds practical tools for real users, I would love
+                to hear about it.
+              </p>
+              <div class="button-row" style="margin-top: 1rem">
+                <a class="button button-primary" href="../index.html#contact">
+                  Contact
+                </a>
+                <a
+                  class="button button-secondary"
+                  href="../resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Resume
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>Built with care for speed, accessibility, and clarity.</p>
+        <div class="site-footer__links">
+          <span>&copy; 2026 Bobby Schade.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>

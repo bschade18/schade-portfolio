@@ -1,39 +1,39 @@
-// Smooth Scrolling
-$('#navbar a, .contact').on('click', function (event) {
-  if (this.hash !== '') {
-    event.preventDefault();
+const nav = document.querySelector("[data-site-nav]");
+const menuButton = document.querySelector("[data-menu-toggle]");
+const navLinks = document.querySelectorAll("[data-site-nav] a");
 
-    const hash = this.hash;
+if (nav && menuButton) {
+  const setMenuState = (isOpen) => {
+    nav.classList.toggle("is-open", isOpen);
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+    menuButton.textContent = isOpen ? "Close menu" : "Open menu";
+    document.body.classList.toggle("menu-open", isOpen);
+  };
 
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - 100,
-      },
-      800
-    );
-  }
-});
+  setMenuState(false);
 
-// Sticky menu background
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 150) {
-    document.querySelector('#navbar').style.opacity = 0.9;
-  } else {
-    document.querySelector('#navbar').style.opacity = 1;
-  }
-});
+  menuButton.addEventListener("click", () => {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+    setMenuState(!isOpen);
+  });
 
-// show more projects
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 760) {
+        setMenuState(false);
+      }
+    });
+  });
 
-const showMoreBtn = document.querySelector('.show-btn');
-const showMore = document.querySelector('.show-more');
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuState(false);
+    }
+  });
 
-showMoreBtn.addEventListener('click', () => {
-  showMore.classList.toggle('view');
-
-  if (showMoreBtn.innerHTML === 'Show Smaller Apps') {
-    showMoreBtn.innerHTML = 'Show Less';
-  } else {
-    showMoreBtn.innerHTML = 'Show Smaller Apps';
-  }
-});
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 760) {
+      setMenuState(false);
+    }
+  });
+}

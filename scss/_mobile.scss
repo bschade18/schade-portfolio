@@ -1,95 +1,140 @@
-@media (max-width: 900px) {
-  #about {
-    height: auto;
+@mixin apply-mobile-styles {
+  @media (max-width: 1080px) {
+    .three-column,
+    .writing-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
-    .about-content {
+    .case-study-layout,
+    .resume-grid,
+    .process-layout,
+    .about-layout,
+    .contact-shell,
+    .two-column {
       grid-template-columns: 1fr;
-
-      .about-text {
-        margin-top: 1.5rem;
-      }
     }
   }
 
-  #work .projects {
-    grid-template-columns: 1fr;
-  }
-}
+  @media (max-width: 900px) {
+    .featured-grid,
+    .skills-grid,
+    .meta-grid,
+    .hero-highlight__grid,
+    .contact-form__grid {
+      grid-template-columns: 1fr;
+    }
 
-@media (max-width: 768px) {
-  #navbar {
-    .container {
+    .hero__panel {
+      grid-template-columns: 1fr;
+    }
+
+    .page-title,
+    .hero__title {
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .site-nav__toggle {
+      display: inline-flex;
+    }
+
+    .site-nav {
+      position: relative;
+    }
+
+    .site-nav__menu {
+      position: absolute;
+      top: calc(100% + 0.75rem);
+      right: 0;
+      left: auto;
+      width: min(18rem, calc(100vw - 2rem));
+      padding: 1rem;
+      border-radius: 1.25rem;
+      border: 1px solid var(--border);
+      background: rgba(255, 253, 248, 0.96);
+      box-shadow: var(--shadow);
       flex-direction: column;
+      align-items: flex-start;
+      gap: 0.85rem;
+      opacity: 0;
+      transform: translateY(-0.5rem);
+      pointer-events: none;
+      visibility: hidden;
+      transition:
+        opacity 0.2s ease,
+        transform 0.2s ease,
+        visibility 0.2s ease;
     }
 
-    ul {
-      margin-top: 10px;
-    }
-  }
-}
-
-/* Mobile Phones */
-
-@media (max-width: 500px) {
-  #navbar {
-    .phone-mobile {
-      display: block;
-      color: #fff;
-      font-size: 1rem;
-      border: 1px solid #fff;
-      padding: 7px 10px;
-      margin-top: 10px;
-    }
-    ul {
-      justify-content: center;
-
-      li a.phone {
-        display: none;
-      }
+    .site-nav.is-open .site-nav__menu {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+      visibility: visible;
     }
   }
 
-  #work {
-    div.projects.container {
-      padding: 0 10px;
+  @media (max-width: 640px) {
+    .site-header__inner {
+      min-height: 4.5rem;
+    }
+
+    .section {
+      padding: 3.5rem 0;
+    }
+
+    .container {
+      width: min(100% - 1.25rem, 72rem);
+    }
+
+    .site-footer__inner,
+    .button-row,
+    .resume-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .featured-grid,
+    .writing-grid,
+    .skills-grid,
+    .three-column {
+      grid-template-columns: 1fr;
+    }
+
+    .contact-form__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      padding-top: 2.75rem;
+    }
+
+    .hero__panel,
+    .page-shell__hero,
+    .contact-panel,
+    .contact-form-card,
+    .project-card,
+    .resume-card,
+    .case-study-section {
+      padding: 1.35rem;
+    }
+
+    .results-table {
+      min-width: 30rem;
     }
   }
 
-  #contact {
-    div.contact-form.container {
-      padding: 0 10px;
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
     }
-  }
-}
 
-@media screen and (max-width: 425px) {
-  #about {
-    .about-content {
-      .about-image {
-        img {
-          width: 300px;
-          width: 250px;
-          height: 300px;
-          height: 250px;
-        }
-      }
-
-      .about-text {
-        text-align: center;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 300px) {
-  #about {
-    .about-content {
-      .about-image {
-        img {
-          width: 200px;
-          height: 200px;
-        }
-      }
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
     }
   }
 }
