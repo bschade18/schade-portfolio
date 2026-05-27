@@ -649,17 +649,6 @@ main {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(255, 253, 248, 0.72)), linear-gradient(135deg, rgba(242, 92, 59, 0.15), rgba(28, 79, 156, 0.15));
 }
 
-.portrait-frame::before {
-  content: "";
-  position: absolute;
-  inset: auto 1.2rem 1.2rem auto;
-  width: 6rem;
-  height: 6rem;
-  border-radius: 1.5rem;
-  border: 1px solid rgba(16, 24, 40, 0.08);
-  background: rgba(255, 255, 255, 0.42);
-}
-
 .portrait-frame img {
   aspect-ratio: 1/1;
   width: 100%;
